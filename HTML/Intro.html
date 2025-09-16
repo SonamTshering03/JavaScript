@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script>
+        function changeContent() {
+            document.getElementById("div_2").innerHTML="Orange";
+        }
+    </script>
+    <script src="../JS/Intro.js"></script>
+</head>
+<body>
+    <div id="div_1">Hello</div>
+    <button onclick='document.getElementById("div_1").innerHTML="Kuzu Zangpo"';>Click me!</button><br><br>
+
+    <div id="div_2">Apple</div>
+    <button ondblclick="changeContent()">Try me!</button> <br><br>
+    <div id="div_3">Red</div>
+    <button onclick='changeColor()'>Change Color</button>
+</body>
+</html>
