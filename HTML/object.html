@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <script>
+        // literal object declaration
+        const person1 = {
+            name:"Sonam", 
+            age:"20", 
+            phone:"17670214",
+            greeting: function() {
+                return this.name + " " + "says hello!";
+            }
+        };
+        document.getElementById("para1").innerHTML = person1.greeting();
+
+        // using new keyword
+        const person2 = new Object({name:"Sonam", age:"57", phone:"17670214"});
+        document.getElementById("para1").innerHTML = "Name: " + person1.name;
+        
+        const student1 = {
+            id:"05240152", 
+            course:"CSN", 
+            name:"Sonam",
+            course_info: function() {
+                return this.name + " " + "is in course" + " " + this.course;
+            }
+        };
+        document.getElementById("para2").innerHTML = student1.course_info();
+
+    </script>
+</body>
+</html>

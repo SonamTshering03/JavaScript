@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <p id="para1"></p>
+    <button onclick='calculate()'>Sum</button>
+
+    <script>
+        function calculate() {
+            let x = prompt("Enter your first number: ");
+            let y = prompt("Enter your second number: ");
+            let sum = getSum(x,y);
+
+            document.getElementById("para1").innerHTML = x + " " + "+" + " " + y + " " + "=" + " " + sum;
+        }
+        function getSum(a,b) {
+            return Number(a) + Number(b);
+        }
+    // using arrow to replace function keyword
+        // let findSum = () => a+b+c;
+        // let fullName = (fName,lName) => document.getElementById("para1").innerHTML = fName + " " + lName;
+    </script>
+</body>
+</html>

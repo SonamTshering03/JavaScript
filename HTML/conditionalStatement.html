@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+</head>
+<body>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <button onclick='getToday()'>Get Day</button>
+    <script>
+        // let x = 19;
+        // let result = x > 18 ? "You are an adult." : "You are still a child.";
+        // document.getElementById("para1").innerHTML = result;
+
+
+
+        function getToday(){
+            let date = new Date().getToday();
+            switch(num){
+                case 1:
+                    document.getElementById("para2").innerHTML = "Today is Sunday";
+                    break
+                case 2:
+                    document.getElementById("para2").innerHTML = "Today is Monday";
+                    break
+                case 3:
+                    document.getElementById("para2").innerHTML = "Today is Tuesday";
+                    break
+                case 4:
+                    document.getElementById("para2").innerHTML = "Today is Wednesday";
+                    break
+                case 5:
+                    document.getElementById("para2").innerHTML = "Today is Thursday";
+                    break
+                case 6:
+                    document.getElementById("para2").innerHTML = "Today is Friday";
+                    break
+                case 7:
+                    document.getElementById("para2").innerHTML = "Today is Saturday";
+                    break
+            }
+        }
+    </script>
+</body>
+</html>

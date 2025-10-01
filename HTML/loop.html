@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <p id="para3"></p>
+    <script>
+        let i = 5;
+        for (let i = 0; i < fruits.length; i++) {
+            result.innerHTML += fruits[i] + "<br>";
+        }
+        result.innerHTML = i;
+        let fruits2 = ["Apple", "Mango", "Banana"];
+        let x = 0;
+        while (x < fruits2.length) {
+            document.getElementById("para2").innerHTML += fruits [x] + "<br>";
+            x++;
+        }
+
+        let y = 0;
+        do {
+            document.getElementById("para2").innerHTML += fruits2[y] + "<br>";
+            y++;
+        }
+        while(y < fruits2.length);
+    </script>
+</body>
+</html>

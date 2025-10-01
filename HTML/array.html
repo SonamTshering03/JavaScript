@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays</title>
+</head>
+<body>
+  <p id="para1"></p>
+
+  <script>
+    let fruits = ["Apple", "Mango", "Banana"];
+    let colors = new Array("Red", "Blue", "Green");
+
+    let result = document.getElementById("para1");
+    // fruits [1] = "grapes";
+
+    let arraySize = fruits.length;
+    let indexOfLastElement = arraySize - 1;
+    // fruits.pop();
+    // fruits.push("Orange");
+    // fruits.shift();
+    // fruits.unshift("Pineapple");
+
+    let arr1 = ["C", "C++"];
+    let arr2 = ["java", "Python"];
+    let arr3 = arr1.concat(arr2);
+
+    result.innerHTML = fruits.sort();
+  </script>
+</body>
+</html>
