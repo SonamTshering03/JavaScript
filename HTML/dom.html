@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        a{
+            background-color: aquamarine;
+        }
+        p{
+            color: blue;
+        }
+        div {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <a href="facebook.com" id="fb">Facebook</a><br><br>
+    <button onclick="runDOM()">Click me</button>
+
+    <p id="p1" title="Test">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aliquid sit est labore reiciendis explicabo quibusdam rerum iusto necessitatibus cum?</p>
+
+    <p id="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium ullam rerum quibusdam consequuntur perspiciatis sit laborum, molestiae, aliquam delectus nihil animi aperiam tempora nisi sunt.</p>
+    
+    <!-- fontcolor - red
+    fontsize - 30px
+    title - updated
+    content - this is updated paragraph -->
+    <div id="d1">
+        <h1 id="delete_h1">This is div</h1>
+    </div>
+    <script>
+        function runDOM() {
+            let fb = document.getElementById("fb");
+            fb.innerHTML = "Instagram";
+            fb.href = "Instagram.com";
+            fb.style.backgroundColor = "red";
+            fb.style.color = "green";
+
+            let para = document.getElementById("p1");
+            para.style.color = "red";
+            para.style.fontSize = "30px";
+            para.title = "Updated"
+            para.innerHTML = "This is the updated paragraph."
+
+            let new_p = document.createElement("p");
+            new_p.innerHTML = "This is the new p";
+            document.body.appendChild(new_p);
+
+            let new_h3 = document.createElement("p");
+            new_h3.innerHTML = "New h3";
+            new_h3.color = "red";
+
+            let parent = document.getElementById("d1");
+            parent.appendChild(new_h3);
+
+            // for removing
+            // const elmnt = document.getElementById("h1"); 
+            // elmnt.remove();
+            // or
+            document.getElementById("delete_h1").remove();
+        }
+        
+    </script>
+</body>
+</html>
