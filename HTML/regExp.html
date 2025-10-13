@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression(Replace)</title>
+</head>
+<body>
+    <p id="p1">Today is Sunday. The sun is shining brightly. It is scorching hot.</p>
+
+    <script>
+        let str = document.getElementById("p1").innerHTML;
+        document.getElementById("p1").innerHTML = str.replace(/sun/i, "moon");
+    </script>
+</body>
+</html>

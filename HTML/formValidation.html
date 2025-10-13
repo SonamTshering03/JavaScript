@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <form name="loginForm" action="#" onsubmit="return validateLoginForm()" method="post">
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="email">
+        <br><br>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="0" max="10">
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateLoginForm() {
+            let lf = document.forms['loginForm'];
+            let email = lf['email'].value.trim();
+            let age = lf['age'].value.trim();
+
+            // Email validation
+            if (email === "") {
+                alert('Email cannot be empty.');
+                return false;
+            }
+
+            let x = "";
+            const pattern = / ^ [a-z0-9.] + @jnec\.edu\.bt$/;
+            if (pattern.test(email) == false) {
+                alert("Invalid email");
+                return false
+            }
+
+            // Age validation
+            // if (age === "" || isNaN(age) || age < 0 || age > 10) {
+            //     alert('Age must be between 0 and 10.');
+            //     return false;
+            // }
+        }
+    </script>
+</body>
+
+</html>
